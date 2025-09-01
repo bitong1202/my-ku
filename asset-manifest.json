@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-ku/static/css/main.f6a72856.css",
+    "main.js": "/my-ku/static/js/main.3cec0d09.js",
+    "index.html": "/my-ku/index.html",
+    "main.f6a72856.css.map": "/my-ku/static/css/main.f6a72856.css.map",
+    "main.3cec0d09.js.map": "/my-ku/static/js/main.3cec0d09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6a72856.css",
+    "static/js/main.3cec0d09.js"
+  ]
+}
