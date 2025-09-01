@@ -1,0 +1,105 @@
+.contact-section {
+  background: white;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 顶部联系方式保持原样 */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+  position: relative;
+}
+
+.contact-info-card:not(:last-child) {
+  border-bottom: 1px solid rgba(30, 60, 114, 0.08);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #1e3c72;
+  flex-shrink: 0;
+}
+
+.contact-details h4 {
+  font-size: 1.1rem;
+  color: #1e3c72;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-main { font-size: 1rem; color: #333; margin-bottom: 4px; font-weight: 500; }
+.contact-sub { font-size: 0.9rem; color: #666; margin: 0; }
+
+/* 单列表单：居中显示 */
+.contact-main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-section {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  height: auto;
+  display: block;
+  width: 100%;
+  max-width: 640px;
+}
+
+.contact-form-section h3 {
+  font-size: 1.6rem;
+  color: #1e3c72;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-form-section p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-weight: 500; color: #333; font-size: 0.9rem; }
+.form-group input, .form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #1e3c72; }
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+@media (max-width: 768px) {
+  .contact-info-grid { grid-template-columns: 1fr; gap: 20px; }
+  .form-row { grid-template-columns: 1fr; gap: 15px; }
+}

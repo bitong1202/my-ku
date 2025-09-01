@@ -1,0 +1,304 @@
+.admission-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.admission-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.admission-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: 2px solid #1e3c72;
+  background: transparent;
+  color: #1e3c72;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.admission-tab:hover {
+  background: #1e3c72;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.admission-tab.active {
+  background: #1e3c72;
+  color: white;
+}
+
+.admission-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.admission-header h3 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.admission-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.admission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.admission-programs, .admission-requirements, .admission-timeline {
+  background: transparent;
+  padding: 30px;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+}
+
+.admission-programs::after, .admission-requirements::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: -15px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(30, 60, 114, 0.2), transparent);
+}
+
+.admission-programs h4, .admission-requirements h4, .admission-timeline h4 {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.programs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.program-item {
+  padding: 8px 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+  position: relative;
+}
+
+.program-item:not(:last-child) {
+  border-bottom: 1px solid rgba(30, 60, 114, 0.1);
+}
+
+.program-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.program-info h5 {
+  font-size: 1rem;
+  color: #1e3c72;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.program-details {
+  display: flex;
+  gap: 25px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.3;
+  margin-left: 20px;
+}
+
+.program-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.admission-requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admission-requirements li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.admission-requirements li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+.admission-requirements li:last-child {
+  border-bottom: none;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  background: transparent;
+  border-radius: 0;
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  border-bottom: 1px solid rgba(30, 60, 114, 0.1);
+}
+
+.timeline-month {
+  background: transparent;
+  color: #1e3c72;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: left;
+  border-left: 3px solid #1e3c72;
+  padding-left: 8px;
+}
+
+.timeline-event {
+  color: #333;
+  font-weight: 500;
+}
+
+.admission-contact {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.admission-contact h4 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.contact-info {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.contact-item svg {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.contact-item h5 {
+  font-size: 1.1rem;
+  color: #1e3c72;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-item p {
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 按钮已移除，保留容器占位的样式也同步删除 */
+
+@media (max-width: 1200px) {
+  .admission-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .contact-info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-tabs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .admission-tab {
+    justify-content: center;
+  }
+
+  .admission-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .admission-programs, .admission-requirements, .admission-timeline {
+    padding: 20px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .admission-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admission-header h3 {
+    font-size: 1.8rem;
+  }
+}

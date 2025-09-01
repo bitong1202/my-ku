@@ -1,0 +1,248 @@
+.about-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.about-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 80px 0 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-header .about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.about-content {
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page .about-content .about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: stretch;
+  display: block;
+}
+
+.about-page .about-section {
+  margin-bottom: 56px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+.about-page .section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.about-page .section-icon {
+  font-size: 1.6rem;
+  color: #1e3c72;
+}
+
+.about-page .section-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin: 0;
+}
+
+.about-page .section-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-page .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.about-page .feature-card {
+  background: transparent;
+  padding: 8px 0 8px 12px;
+  border-radius: 0;
+  border-left: 3px solid #1e3c72;
+  transition: none;
+  box-shadow: none;
+  height: auto;
+}
+
+.about-page .feature-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.about-page .feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.about-page .feature-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  margin-top: 28px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.about-page .stat-item {
+  text-align: left;
+  padding: 0;
+  background: transparent;
+  color: #1e3c72;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  transition: none;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.about-page .stat-item:hover {
+  transform: none;
+}
+
+.about-page .stat-item h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1e3c72;
+}
+
+.about-page .stat-item p {
+  font-size: 0.95rem;
+  color: #667085;
+  margin: 0;
+}
+
+.about-page .achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 28px;
+  width: 100%;
+}
+
+/* 大屏下让卡片呈 2 列对称布局，避免最后一行偏左 */
+@media (min-width: 992px) {
+  .about-page .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-page .achievements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-page .achievement-item {
+  background: transparent;
+  padding: 8px 0 8px 12px;
+  border-radius: 0;
+  border-left: 3px solid #1e3c72;
+  height: auto;
+}
+
+.about-page .achievement-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin-bottom: 8px;
+}
+
+.about-page .achievement-item p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* 保持上方现有样式不变，这里只修正移动端栅格作用域 */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  
+  .about-header p {
+    font-size: 1rem;
+  }
+  
+  .about-section {
+    padding: 30px 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-page .features-grid,
+  .about-page .stats-grid,
+  .about-page .achievements {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-page .stat-item h3 {
+    font-size: 2rem;
+  }
+}

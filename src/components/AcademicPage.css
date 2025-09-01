@@ -1,0 +1,365 @@
+.academic-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+  padding-top: 80px;
+}
+
+.academic-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+.academic-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.academic-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.academic-section {
+  margin-bottom: 80px;
+}
+
+.academic-section h2 {
+  font-size: 2.5rem;
+  color: #1e3c72;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.academic-section h2 svg {
+  font-size: 2rem;
+  color: #2a5298;
+}
+
+/* 学院设置 */
+.colleges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.college-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-10px);
+}
+
+.college-image {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.college-card h3 {
+  font-size: 1.5rem;
+  color: #1e3c72;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.college-card p {
+  color: #666;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.college-stats {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 15px;
+  border-radius: 10px;
+  color: #1e3c72;
+  font-weight: 500;
+}
+
+/* 专业介绍 */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.program-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #1e3c72;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.program-header h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin: 0;
+  font-weight: 600;
+}
+
+.program-badge {
+  background: #1e3c72;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.program-duration {
+  color: #2a5298;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.program-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 人才培养 */
+.talent-cultivation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cultivation-item {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cultivation-item:hover {
+  transform: translateY(-5px);
+}
+
+.cultivation-item h3 {
+  font-size: 1.4rem;
+  color: #1e3c72;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.cultivation-item p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.cultivation-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cultivation-item li {
+  color: #666;
+  padding: 8px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.cultivation-item li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+/* 科学研究 */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.research-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+}
+
+.research-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.research-card h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.research-card p {
+  color: #555;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.research-projects {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 10px;
+  border-radius: 8px;
+  color: #1e3c72;
+  font-weight: 500;
+}
+
+.achievements-section {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-section h3 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.achievements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateX(5px);
+}
+
+.achievement-year {
+  background: #1e3c72;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.achievement-text {
+  color: #555;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .academic-header h1 {
+    font-size: 2rem;
+  }
+  
+  .academic-content {
+    padding: 40px 15px;
+  }
+  
+  .academic-section h2 {
+    font-size: 2rem;
+  }
+  
+  .colleges-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .talent-cultivation {
+    grid-template-columns: 1fr;
+  }
+  
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .achievements-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .back-btn {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+  }
+}
