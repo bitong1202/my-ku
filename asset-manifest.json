@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-ku/static/css/main.90868044.css",
-    "main.js": "/my-ku/static/js/main.00c8808e.js",
+    "main.css": "/my-ku/static/css/main.f189629c.css",
+    "main.js": "/my-ku/static/js/main.469a9bc4.js",
     "index.html": "/my-ku/index.html",
-    "main.90868044.css.map": "/my-ku/static/css/main.90868044.css.map",
-    "main.00c8808e.js.map": "/my-ku/static/js/main.00c8808e.js.map"
+    "main.f189629c.css.map": "/my-ku/static/css/main.f189629c.css.map",
+    "main.469a9bc4.js.map": "/my-ku/static/js/main.469a9bc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.90868044.css",
-    "static/js/main.00c8808e.js"
+    "static/css/main.f189629c.css",
+    "static/js/main.469a9bc4.js"
   ]
 }
